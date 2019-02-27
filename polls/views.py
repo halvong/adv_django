@@ -2,8 +2,9 @@ from django.views import generic
 from django.shortcuts import redirect
 from django.views.generic.base import TemplateResponseMixin
 from .models import Question, Choice
+from .mixins import RequireLoginMixin
 
-class IndexView(generic.ListView):
+class IndexView(RequireLoginMixin, generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
 

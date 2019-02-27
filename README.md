@@ -1,6 +1,8 @@
 ADV Django
 2/25/2019, mon.
 
+https://gitlab.com/jeremytiki/MasterDjangoWebDev
+https://docs.djangoproject.com/en/2.2/topics/auth/default/
 
 su - tom
 psql -d advdjango
