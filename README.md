@@ -31,3 +31,14 @@ d_aware.tzinfo
 datetime.datetime(2019, 2, 25, 22, 52, 34, 249900)
 >>> q1 = Question(question_text='What is your favorite employer?', pub_date=pub)
 >>> c1 = Choice(question=q1, choice_text="Networkofone.com", votes=5)
+
+
+#git
+Display log graph
+git log --graph --decorate --pretty=oneline --abbrev-commit
+
+Squashed
+1. Put the to-be-squashed commits on a working branch (if they aren't already) -- use gitk for this
+2. Check out the target branch (e.g. 'master')
+3. git merge --squash (working branch name)
+4. git commit
