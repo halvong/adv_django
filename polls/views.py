@@ -16,16 +16,9 @@ class IndexView(RequireLoginMixin, generic.ListView):
 #---
 class DetailView(generic.DetailView):
     print ("1b. IN DetailView")
->>>>>>> testing
     model = Question
     template_name = 'polls/detail.html'
 
-
-<<<<<<< HEAD
-class DeleteView(generic.DeleteView):
-    model = Question
-    success_url = "/polls/"
-=======
 #---
 class DeleteView(generic.DeleteView):
     print ("1c. IN DeleteView")
