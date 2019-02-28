@@ -1,5 +1,5 @@
 ADV Django
-2/26/2019, tues
+2/27/2019, Wed
 
 https://gitlab.com/jeremytiki/MasterDjangoWebDev
 https://docs.djangoproject.com/en/2.2/topics/auth/default/
@@ -36,6 +36,11 @@ datetime.datetime(2019, 2, 25, 22, 52, 34, 249900)
 #git
 Display log graph
 git log --graph --decorate --pretty=oneline --abbrev-commit
+
+#checkout remote
+1. git fetch
+2. git checkout <branch>
+3. git checkout -b <branch>
 
 Squashed
 1. Put the to-be-squashed commits on a working branch (if they aren't already) -- use gitk for this
