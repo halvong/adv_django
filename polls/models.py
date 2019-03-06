@@ -4,10 +4,12 @@ class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
+    def question_and_date(self):
+        return "{} posted at {}".format(self.question_text, self.pub_date)
+
     def __str__(self):
         return self.question_text
 
-#one Question to many Choice
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
@@ -16,3 +18,6 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 
+    def add_vote(self):
+        self.votes += 1
+        self.save()
