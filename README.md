@@ -21,6 +21,12 @@ python manage.py makemigrations polls
 python manage.py sqlmigrate polls 0001
 python manage.py migrate
 
+python manage.py test --settings=adv_pycharm.settings.dev
+python manage.py shell --settings=adv_pycharm.settings.dev
+coverage run manage.py test --settings=adv_pycharm.settings.dev
+coverage report | less
+
+
 ----
 d = datetime.datetime.now()
 timezone = pytz.timezone("America/Los_Angeles")
