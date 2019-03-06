@@ -1,5 +1,6 @@
 ADV Django
 3/05/2019, Tues
+test_model.py -- needs to review.
 
 https://gitlab.com/jeremytiki/MasterDjangoWebDev
 https://docs.djangoproject.com/en/2.2/topics/auth/default/
